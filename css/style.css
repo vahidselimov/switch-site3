@@ -1,0 +1,106 @@
+:root{--yasil:#54d154;--tundyasil:#3eba3e; --boz:#f2f1f1;--tundboz:#828181;}
+/*            -class adlari ---------------------------------------------- */
+.txtyasil{color: var(--yasil);}
+.txttundyasil{color:var(--yasil);}
+.txboz{color:var(--boz);}
+.txtundboz{color: var(--tundboz);}
+.bgyasil{background-color: var(--yasil);}
+.bgtundyasil{background-color:var(--yasil);}
+.bgboz{background-color:var(--boz);}
+.bgtundboz{background-color: var(--tundboz);}
+.txtcntr{text-align: center;}
+/* Mobile dizayn */
+header{
+height: 100vh;
+background: url(../img/background-image.jpg)56% 72%/cover;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ position: relative;
+}
+menu li{padding: 5px 10px;}
+.img-logo{
+padding-top: 15px;
+}
+menu li a {
+display: inline-block;
+padding: 5px 0;
+font: bold 1em 'Proxima Nova';
+color: #fff;
+}
+#search{
+display: flex;
+ justify-content: center;
+padding: 10px 30px;
+}
+#search input {
+ height: 27px;
+padding: 7px 15px;
+ background: #ffffffcc;
+ border: none;
+ outline: none;
+  cursor: pointer;
+}
+#search i{
+ padding: 5px 17px 5px 0;
+ background: #ffffffcc;
+border-radius: 0 15px 15px 0; 
+cursor: pointer;
+}
+#search input:first-child { border-radius: 15px 0 0 15px;  }
+#search input:last-child {  border-radius: 0 15px 15px 0; }
+#search input:first-child::-webkit-search-cancel-button {display: none;}
+#title{
+    width: 100%;
+    bottom: 35%;
+    position: absolute;
+}
+#title h1{
+font: 600 2em "Montserrat"; 
+ color: #fff;
+ padding-bottom: 30px;
+}
+#title a{
+display: inline-block;
+font: 1.3em "Proxima Nova";
+color: #fff;
+padding: 16px 27px;
+border-radius: 23px;
+margin: auto;
+background-color: #53d153;
+}
+#scroll{
+opacity: 0.702;
+width: 120px;
+height: 25px;
+border-radius: 13px;
+background-color: #ffffff;
+font:300 1em "Proxima Nova";
+position: absolute;
+bottom: 12px;
+left: 49%;
+transform: translate(-50%, -50%);
+color: #111;
+}
+/* Desktop Dizayn */
+@media only screen and (min-width: 768px) {
+header{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ text-align: initial;
+}
+nav{
+ display: flex;
+ justify-content: space-between;
+}
+menu{
+display: flex;
+order: -1;
+}
+menu li a {border-top: 5px solid #00000000;transition: 0.5s border-top;}
+menu li a.active ,menu li a:hover{
+border-top: 5px  solid var(--yasil);
+}
+#title h1{font-weight: 600; font-size: 3.4em;}
+}
