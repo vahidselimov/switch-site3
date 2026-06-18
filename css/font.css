@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @font-face {
     font-family: "Avenir Next Rounded Std";
-    src: url("/font/AvenirNextRoundedStd-BoldIt\ \(1\).woff2");
+    src: url("../font/AvenirNextRoundedStd-BoldIt (1).woff2") format("woff2");
 }
+
 @font-face {
     font-family: "Myriad Pro";
-    src: url("/font/MYRIADPRO-BOLDCOND.woff");
+    src: url("../font/MYRIADPRO-BOLDCOND.woff") format("woff");
 }
+
 @font-face {
     font-family: "Proxima Nova";
-    src: url("//font/ProximaNova-Semibold.ttf");
+    src: url("../font/ProximaNova-Semibold.ttf") format("truetype");
 }
